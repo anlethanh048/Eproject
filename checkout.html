@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check out | Home Wildlife</title>
+    <link rel="shortcut icon" href="images/logo-20191024T061444Z-001/logo/icon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/checkout.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h2>Responsive Checkout Form</h2>
+        <div class="row">
+            <div class="container">
+                <form action="#" id="checkoutform">
+                    <div class="row">
+                        <div class="col-58">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user" aria-hidden="true"></i> Full name</label>
+                            <input type="text" id="fullname" placeholder="John M.Done" required>
+
+                            <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                            <input type="text" id="email" placeholder="john@example.com" required>
+
+                            <label for="adr"><i class="fa fa-address-card-o" aria-hidden="true"></i> Address</label>
+                            <input type="text" id="adr" placeholder="452 W. 15th St." required>
+
+                            <label for="city"><i class="fa fa-institution" aria-hidden="true"></i> City</label>
+                            <input type="text" id="city" placeholder="Phone Penh" required>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" name="state" id="state" placeholder="PP" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="state">Zip</label>
+                                    <input type="text" name="zip" id="zip" placeholder="10001" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Card</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" aria-hidden="true" style="color: navy;"></i>
+                                <i class="fa fa-cc-amex" aria-hidden="true" style="color: blue;"></i>
+                                <i class="fa fa-cc-mastercard" aria-hidden="true" style="color: red;"></i>
+                                <i class="fa fa-cc-discover" aria-hidden="true" style="color: orange;"></i>
+                            </div>
+                            <label for="cname">Name on card</label>
+                            <input type="text" name="cardnumber" id="cname" placeholder="John More Done" required>
+
+                            <label for="csnum">Credit card</label>
+                            <input type="text" name="cardnumber" id="csnum" placeholder="1111-2222-3333-4444" required>
+
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" name="expmonth" id="expmonth" placeholder="September" required>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="cvv">Exp Year</label>
+                                    <input type="text" name="expyear" id="expyear" placeholder="2018" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="cvv" id="cvv" placeholder="352" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <input type="submit" value="Buy Now" class="btn">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("checkoutform").onsubmit = function () {
+            //Khai báo các giá trị dữ liệu trong form
+            var name = document.getElementById("fullname").value;
+            var mail = document.getElementById("email").value;
+            var add = document.getElementById("adr").value;
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var zip = document.getElementById("zip").value;
+            var card = document.getElementById("cname").value;
+            var credit = document.getElementById("csnum").value;
+            var expmonth = document.getElementById("expmonth").value;
+            var expyear = document.getElementById("expyear").value;
+            var cvv = document.getElementById("cvv").value;
+
+            //Khai báo mảng
+            var a = new Array();
+            a.push("Check out Information");
+            a.push("------------------");
+            a.push("Full name : " + name);
+            a.push("Email : " + mail);
+            a.push("Address : " + add);
+            a.push("City : " + city);
+            a.push("State : " + state);
+            a.push("Zip : " + zip);
+            a.push("Card : " + card);
+            a.push("Credit : " + credit);
+            a.push("Exp Month : " + expmonth);
+            a.push("Exp Year : " + expyear);
+            a.push("CVV : " + cvv);
+            a.push("---------------------------------------------------");
+            a.push("Thank you for using our service. We will send an email to confirm your order.");
+            //Khai báo chuỗi s là chuỗi a được nối với nhau bằng khoảng trắng
+            var s = a.join("\n");
+            //Thông báo thông tin đã được đăng ký
+            alert(s);
+            return false;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="fontawe/fontawe/css/all.css">
+	<link rel="shortcut icon" href="images/logo-20191024T061444Z-001/logo/icon.ico">
+	<title> Feedback | Home Wildlife</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Anton|Fascinate+Inline|Nunito+Sans|Oswald:300,400,500,600,700|Roboto&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/css/feedbackform.css">
+
+</head>
+
+<body>
+	<!--MAIN-MENU-->
+	<header>
+		<div id="myNavbar" class="nav">
+			<ul>
+				<li style="width: 70px;"><a href="index.html">HOME</a></li>
+				<li style="width: 90px;"><a href="about.html">ABOUT US</a></li>
+				<li style="width: 100px;"><a href="contact.html">CONTACT US <span class="caret"></span></a>
+					<ul id="drop-main-menu">
+						<li style="width: 120px"><a href="contact.html">MAPS</a></li>
+						<li style="width: 120px"><a href="contact.html">ADDRESS</a></li>
+						<li style="width: 120px"><a id="active" href="feedbackform.html">FEEDBACK</a></li>
+					</ul>
+				</li>
+				<li style="width: 110px;"><a href="Animal.html">WIDER VISION</a>
+
+				</li>
+				<li style="width: 125px;"><a href="NewsEvents.html">NEWS & EVENTS <span class="caret"></span></a>
+					<ul id="drop-main-menu">
+						<li><a href="NewsEvents.html">UPCOMING EVENTS</a></li>
+						<li><a href="#future-zoo-plans">FUTURE ZOO PLANS</a></li>
+					</ul>
+				</li>
+				<li style="width: 115px;"><a href="ppolicy.html">PRIVACY POLICY</a></li>
+				<li style="width: 30px;"><a href="https://www.facebook.com/FortWorthZoo/" target="black"
+						data-tooltip="facebook">
+						<i class="fa fa-facebook"></i>
+					</a></li>
+				<li style="width: 30px;"> <a href="https://twitter.com" target="black" data-tooltip="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li style="width: 30px;">
+					<a href="https://mail.google.com" target="_blank" data-tooltip="gmail" id="gmail">
+						<i class="fab fa-google gg"></i>
+					</a>
+				</li>
+				<li style="width: 30px;">
+					<a href="https://www.instagram.com/" target="_blank" data-tooltip="instagram" id="instagram">
+						<i class="fab fa-instagram ig"></i>
+					</a>
+				</li>
+				<li style="width: 80px;"><a data-toggle="modal" data-target="#search-modal" href=""><span
+							class="glyphicon glyphicon-search"></span> Search</a></li>
+			</ul>
+		</div>
+		<!--LOGO AND SUB MENU-->
+		<div id="sub-menu" class="nav">
+			<div id="small-logo" class="navbar-header">
+				<a id="small-logo1" href="index.html"><img src="images/4.2.png" width="45px"></a>
+			</div>
+			<div class="nav navbar-right">
+				<ul id="menu" class="navbar-nav">
+					<li><a href="">MENBERSHIP</a>
+						<ul id="drop-sub-menu">
+							<li><a href="Register.html">REGISTER</a></li>
+							<li><a data-toggle="modal" data-target="#login-modal" href="">MEMBER ACCOUNT</a></li>
+						</ul>
+					</li>
+					<li><a href="#">CONSERVATION</a>
+						<ul id="drop-sub-menu">
+							<li><a href="buyticket-FAQs.html">BUY TICKET</a></li>
+							<li><a href="book-a-campus.html">BOOK A CAMPUS</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<br>
+		<div class="row col-md-6 col-md-offset-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading text-center">
+					<h1>Send us your feedback!</h1>
+				</div>
+				<div class="panel-body">
+					<form id="feedbackform" name="contact" method="POST" action="#">
+						<div class="form-group">
+							<label for="rate">How would you rate this page?</label>
+							<label for="rate">
+								<div class="rating-wrapper">
+									<input type="radio" name="rating" id="star-1"><label for="star-1"></label>
+									<input type="radio" name="rating" id="star-2"><label for="star-2"></label>
+									<input type="radio" name="rating" id="star-3"><label for="star-3"></label>
+									<input type="radio" name="rating" id="star-4"><label for="star-4"></label>
+									<input type="radio" name="rating" id="star-5"><label for="star-5"></label>
+								</div>
+							</label>
+							<script>
+								$(document).ready(function () {
+									$('[data-toggle="tooltip"]').tooltip();
+								});
+							</script>
+						</div>
+						<div class="form-group">
+							<label for="name">Full name <span class="req">*</span></label>
+							<input type="text" name="name" id="name" class="form-control" placeholder="Steve Jobs"
+								required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone <span class="req">*</span></label>
+							<input type="number" name="phone" id="phone" class="form-control" placeholder="0963-179-602"
+								required>
+						</div>
+						<div class="form-group">
+							<label for="email">Mail <span class="req">*</span></label>
+							<input type="email" name="mail" id="mail" class="form-control"
+								placeholder="SteveJobs@gmail.com" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Review <span class="req">*</span></label>
+
+						</div>
+						<div class="form-group">
+							<textarea name="message" id="message" cols="68" rows="8" required></textarea>
+						</div>
+						<div class="text-center">
+							<input class="btn btn-primary" type="submit" formaction="#" id="submitbtn" name="submitbtn"
+								value="Send Feedback">
+						</div>
+					</form>
+
+				</div>
+				<div class="panel-footern text-center">
+					<h5><strong>Your feedback is highly valued and is used to improve our service.</strong></h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-5 col sm-8 col-xs-12 segment-two">
+						<h2>Find out more</h2>
+						<ul>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.html">View Sitemap</a></li>
+							<li><a href="ppolicy.html">Privacy Policy</a></li>
+							<li><a href="buyticket-FAQs.html">FAQs</a></li>
+						</ul>
+
+					</div>
+					<div class="col-md-4 col sm-8 col-xs-12 segment-three">
+						<h2>location</h2>
+						<p> 590 CMT8 Street, District 3,
+							Ho Chi Minh City, Viet Nam.
+						</p>
+						<p><i style="color: #fff;" class="fa fa-phone mr-3"></i>&nbsp;&nbsp;(096)317-9602</p>
+						<p><i style="color: #fff;" class="fa fa-envelope-o mr-3"></i>&nbsp;&nbsp;homewildlife@gmail.com
+						</p>
+						<a id="facebook" href="https://www.facebook.com/" target="black"><i
+								class="fa fa-facebook"></i></a>
+						<a id="twitter" href="https://twitter.com" target="black"><i class="fa fa-twitter"></i></a>
+						<a id="youtube" href="https://www.youtube.com/" target="black"><i class="fa fa-youtube"></i></a>
+						<a id="pinterest" href="https://www.pinterest.com/" target="black"><i
+								class="fa fa-pinterest"></i></a>
+
+					</div>
+					<div class="col-md-3 col sm-8 col-xs-12 segment-four">
+						<h2>Opening Hour</h2>
+						<div class="footer-widget-content">
+							<div class="open-time ">
+								<ul class="opening-time">
+									<li><span><i class="fa fa-times"></i></span>
+										<p class="clock-time"><strong>Monday :</strong> Closed</p>
+									</li>
+									<li><span><i class="fa fa-check"></i></span>
+										<p><strong>Tue-Fri :</strong> 8am - 12pm</p>
+									</li>
+									<li><span><i class="fa fa-check"></i></span>
+										<p><strong>Sat-Sun :</strong> 7am - 1pm</p>
+									</li>
+									<li><span><i class="fa fa-check"></i></span>
+										<p><strong>Holydays :</strong> 12pm - 12am</p>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="footer-bottom-text" style="margin-bottom: -10px;">&copy; 2019 HOME WILDLIFE. ALL RIGHTS RESERVED.</p>
+	</footer>
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button id="close" type="button" data-dismiss="modal" aria-hidden="true">X</button>
+					<h4>Login or Register</h4>
+					<form class="login-form" action="">
+						<label for="">Username or Email address<span>*</span></label>
+						<input type="text" placeholder="Username or email" required>
+						<label for="">Password<span>*</span></label>
+						<input type="password" placeholder="Password" required>
+						<button class="browse-btn" id="login" type="submit">Login</button>
+						<label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme" required>
+							Remember me
+						</label>
+						<p class="lost-password"><a href="#">Lost your password?</a></p>
+						<div class="register-now">
+							Don't have an account?<a href="Register.html">Register now!</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		aria-hidden="true">
+
+		<div class="modal-content">
+
+			<form class="search-form" action="">
+				<table>
+					<tr>
+						<th>Search Home Wildfile</th>
+					</tr>
+					<tr>
+						<td><input type="search" id="search" placeholder="Search..."></td>
+						<td><input type="submit" id="Go" value="Go"></td>
+					</tr>
+				</table>
+			</form>
+
+
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$('.quickview-title').click(function () {
+				var $productview = $(this).parent().parent().next();
+				$($productview).fadeIn('1000');
+			});
+			$('.close-btn').click(function () {
+				var $closebtn = $(this).parent();
+				$($closebtn).fadeOut('800');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			var $filter = $('.sidenav');
+			var $filterSpacer = $('<div />', {
+				"class": "vnovernight",
+				"height": $filter.outerHeight()
+			});
+			if ($filter.size()) {
+				$(window).scroll(function () {
+					if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top) {
+						$filter.before($filterSpacer);
+						$filter.addClass("fix");
+					}
+					else if ($filter.hasClass('fix') && $(window).scrollTop() < $filterSpacer.offset().top) {
+						$filter.removeClass("fix");
+						$filterSpacer.remove();
+					}
+				});
+			}
+		});
+
+		document.getElementById("feedbackform").onsubmit = function () {
+			//Khai báo các giá trị dữ liệu trong form
+			var name = document.getElementById("name").value;
+			var phone = document.getElementById("phone").value;
+			var mail = document.getElementById("mail").value;
+			var message = document.getElementById("message").value;
+
+			//Check name
+			var exp1 = new RegExp("^[0-9a-z]{3,100}$", "i");
+			if (!exp1.test(name)) {
+				alert("Names do not include special characters.");
+				document.getElementById("name").focus();
+				return false;
+			}
+			var exp2 = new RegExp("^[0-9a-z]{1,15}@[a-z]{3,7}.[a-z]{3,7}$", "i");
+			if (!exp2.test(mail)) {
+				alert("Invalid mail. xxxxxxx[xxxxxxxx]");
+				document.getElementById("mail").focus();
+				return false;
+			}
+			var exp3 = new RegExp("^[0-9]{7,15}$", "i");
+			if (!exp3.test(phone)) {
+				alert("Invalid phone. xxxxxxx[xxxxxxxx]");
+				document.getElementById("phone").focus();
+				return false;
+			}
+
+			//Khai báo mảng
+			var a = new Array();
+			a.push("Feedback Information");
+			a.push("------------------");
+			a.push("Full name : " + name);
+			a.push("Phone : " + phone);
+			a.push("Email : " + mail);
+			a.push("Review : " + message);
+			a.push("---------------------------------------------------");
+			a.push("Thank you for your feedback !!!");
+			//Khai báo chuỗi s là chuỗi a được nối với nhau bằng khoảng trắng
+			var s = a.join("\n");
+			//Thông báo thông tin đã được đăng ký
+			alert(s);
+			return false;
+		}
+	</script>
+</body>
+
+</html>
