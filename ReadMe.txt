@@ -14,7 +14,7 @@ Instructions to run the website and download the source code.
 	+ Open the folder "Document" --> click "installation guide.pdf", OR: 
 		click on these links below:
 
-	+ Link source code: https://github.com/anlethanh048/Eproject/blob/master/Document/Installation%20guide.pdf
+	+ Link Installation guide: https://github.com/anlethanh048/Eproject/blob/master/Document/Installation%20guide.pdf
 	+ Link website: https://anlethanh048.github.io/Eproject/
 
 Thanks for watching and we look forward to receiving review from you!
