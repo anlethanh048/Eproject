@@ -23,16 +23,16 @@
 /*--header--*/
 /*--main menu--*/
 #myNavbar{
-    background: rgb(75, 73, 73);
+    background: rgb(75, 100, 100);
     margin-top: 0px;
     max-height: 40px;
 }
 #myNavbar ul{
    list-style-type: none;
-float: right;
-   background: rgb(75, 73, 73);   
+
+   background: rgb(73, 73, 73);   
    font-family: 'Oswald', sans-serif;  
-   margin-right:20px;
+
   font-size: 15px;
   z-index: 1;
 }
@@ -42,7 +42,7 @@ float: right;
 
 padding-top: 5px;
    line-height: 35px;
-   position: relative; 
+  
 }
 #myNavbar ul li a{
     color: #fff;
@@ -69,13 +69,13 @@ position: absolute;
 /*--Sub menu--*/
 #sub-menu {
     height: 50px;
-    line-height: 33px;
-    padding-right: 20px;
+    line-height: 50px;   
+    padding-right: 5px;
     font-family: 'Oswald', sans-serif;
   clear:right; 
  font-size: 15px;
  position: relative;
- bottom: 10px;
+ bottom: 1px;
 }
 #sub-menu #menu {
     line-height: 45px;
@@ -107,7 +107,7 @@ position: absolute;
     background: rgb(67, 65, 65);
     width: 150px;
     margin-left: -22px;    
-    padding: 15px 0;
+
 }
 
 #small-logo {
@@ -125,13 +125,13 @@ position: absolute;
 }
 .affix-top {
     position: static;
-    top: -35px;
+    top: -200px;
 }
 
 
 .affix #sub-menu {
     background: rgb(67, 65, 65);
-    margin-top:-10px;    
+    margin-top:-5px;    
 }
 
 
