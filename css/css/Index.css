@@ -71,7 +71,7 @@ position: absolute;
   clear:right; 
  font-size: 15px;
  position: relative;
- bottom: 1px;
+ bottom: 5px;
 }
 #sub-menu #menu {
     line-height: 45px;
