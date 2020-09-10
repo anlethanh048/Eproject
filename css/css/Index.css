@@ -22,11 +22,7 @@
 }
 /*--header--*/
 /*--main menu--*/
-#myNavbar{
-    background: rgb(75, 100, 100);
-    margin-top: 0px;
-    max-height: 40px;
-}
+
 #myNavbar ul{
    list-style-type: none;
 
